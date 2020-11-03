@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@color/colorMain2"
+        android:gravity="center"
+        android:text="대화 분석 예측"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/ResTxt1"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@id/titleTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/txt_background"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="상대방이 당신에게서 \n 가장 많이 느낀 감정"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ResTxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResTxt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/txt_background"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="기쁨"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ResTxt3"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@id/ResTxt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/txt_background"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="상대방의 현재 감정"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ResTxt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResTxt3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/txt_background"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="기쁨"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorMain1">
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="290sp"
+            android:layout_height="60sp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/edt_background" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/edt_background"
+            android:text="분석"
+            android:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+</RelativeLayout>

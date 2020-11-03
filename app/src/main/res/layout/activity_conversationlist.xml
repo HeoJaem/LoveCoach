@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_conversation"
+        android:layout_width="match_parent"
+        android:layout_height="560sp"
+        android:layout_below="@id/toolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_below="@+id/rl_conversation"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tv_blue_background"
+        android:paddingHorizontal="30sp"
+        android:text="대화 내용 업로드 및 분석"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

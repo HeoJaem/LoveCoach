@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10sp">
+    <RelativeLayout
+        android:layout_marginBottom="2sp"
+        android:id="@+id/item_liName"
+        android:background="@drawable/tv_blue_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="5sp"
+        android:text="서지혜님과의 대화"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:id="@+id/item_name"
+        android:layout_width="200sp"
+        android:layout_height="40sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/item_liName"
+        android:background="@drawable/layout_background"
+        android:id="@+id/liItem"
+        android:layout_width="match_parent"
+        android:layout_height="100sp">
+        <TextView
+            android:id="@+id/item_text"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="마지막 분석 : 2020-10-22\n가장 최근 대화 감정 : 혐오"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"/>
+    </RelativeLayout>
+</RelativeLayout>
